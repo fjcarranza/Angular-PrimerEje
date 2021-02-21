@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { ContadorComponent } from './contador.componet';
+import { HeroesModule } from './heroes/heroes.module';
+import { ContadorModule } from './contador/contador.module';
 
-
+// Tarea:
+// Crear un modulo llamado contadorModule
+// Declaraciones y exportaciones 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContadorComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModule,
+    ContadorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
